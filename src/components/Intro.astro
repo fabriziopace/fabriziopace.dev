@@ -2,6 +2,14 @@
 ---
 
 <section class="mb-8">
+  <div class="effect-slide">
+    <img
+      src="/images/tokyotower.jpg"
+      alt="Tokyo Tower"
+      title="Tokyo Tower"
+      loading="lazy"
+    />
+  </div>
   <div class="mb-6">
     <h1
       class="font-bold uppercase text-center text-4xl md:text-5xl xtracking-tighter py-6 overflow-hidden"
@@ -9,7 +17,7 @@
       <span
         class="bg-gradient-to-br from-[#334155] via-[#1e293b] to-[#0f172a] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent"
       >
-        Fabrizio Pace
+        こんにちは!
       </span>
     </h1>
     <div
@@ -58,11 +66,10 @@
         <span>Neptune</span>
       </a>
     </div>
-    <!-- <p class="text-2xl pb-4">Web Developer. OSS Wizard. Blogger.</p> -->
   </div>
   <div>
     <p class="mb-8">
-      こんにちは! Hello! I am Fabrizio, a Full Stack Developer working at <a
+      Hello! I am Fabrizio, a Full Stack Developer working at <a
         href={"https://jdtech.it"}
         aria-label="Jdtech Website"
         target="_blank">Jdtech</a
@@ -77,19 +84,41 @@
       JavaScript frameworks with aim to develop responsive and multi-platform
       apps.
     </p>
-
     <p class="mb-8">
-      I love investing my time to learn new technologies and sharing knowledge
-      in the <a href={"https://community.neptune-software.com"} target="_blank"
-      aria-label="Neptune Software Community"
-        >Neptune Software Community</a
+      I love learning new technologies and sharing knowledge in the <a
+        href={"https://community.neptune-software.com"}
+        target="_blank"
+        aria-label="Neptune Software Community">Neptune Software Community</a
       >.
-    </p>
-
-    <p class="mb-8">
-      Born and grew up in Italy, I traveled in various cities in the world until
-      the 2018, when I discovered the beauty of Japan. Out of office you'll find
-      me playing basketball at some court near my country.
     </p>
   </div>
 </section>
+
+<style>
+  .effect-slide {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .effect-slide:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: hue;
+    background: black;
+    animation: slide-right-left 2s linear 1 forwards;
+  }
+
+  @keyframes slide-right-left {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+</style>
