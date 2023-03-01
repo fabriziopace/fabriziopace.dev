@@ -21,11 +21,9 @@
   font-weight: 400;
 }
 
-
 .fa-github:before {
   content: "\f09b";
 }
-
 
 .fa-github-alt:before {
   content: "\f113";
@@ -39,14 +37,22 @@
   content: "\f092";
 }
 
-.fa-twitter:before {
+/* .fa-twitter:before {
   content: "\f099";
+} */
+
+/* .fa-square-twitter:before {
+  content: "\f081";
+} */
+
+/* .fa-twitter-square:before {
+  content: "\f081";
+} */
+
+.fa-linkedin:before {
+  content: "\f08c";
 }
 
-.fa-square-twitter:before {
-  content: "\f081";
-}
-
-.fa-twitter-square:before {
-  content: "\f081";
+.fa-linkedin-in:before {
+  content: "\f0e1";
 }

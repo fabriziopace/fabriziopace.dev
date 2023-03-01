@@ -23,8 +23,8 @@
         --color-text-bold: 15 23 42;
         /* Tailwind slate-900 #0f172a */
         --color-text-muted: 100 116 139;
-        /* #339af0 */
-        --color-text-link: 51 154 240;
+        /* #b33939 */
+        --color-text-link: 179 57 57;
         /* black */
         --color-text-code: 0 0 0;
         /* black */
@@ -55,8 +55,8 @@
         --color-text-bold: 255 255 255;
         /* Tailwind neutral-300 #d4d4d4 */
         --color-text-muted: 212 212 212;
-        /* #339af0 */
-        --color-text-link: 51 154 240;
+        /* #b33939 */
+        --color-text-link: 179 57 57;
         /* black */
         --color-text-code: 255 255 255;
         /* black */
