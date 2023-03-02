@@ -6,7 +6,7 @@
     <img
       src="/images/tokyotower.jpg"
       alt="Tokyo Tower"
-      title="Tokyo Tower"
+      title=""
       loading="lazy"
     />
   </div>
@@ -109,16 +109,30 @@
     bottom: 0;
     left: 0;
     mix-blend-mode: hue;
-    background: black;
-    animation: slide-right-left 1.5s linear 1 forwards;
+    background: linear-gradient(150deg, black 99%, transparent 1%);
+    transform: scale(1);
+    transform-origin: right bottom;
+    animation: slide-right-left 1s linear 1 forwards;
+  }
+
+  .effect-slide:hover::before {
+    animation: slide-left-right 1s linear 1 forwards;
   }
 
   @keyframes slide-right-left {
     0% {
-      width: 100%;
+      transform: scale(1);
     }
     100% {
-      width: 0%;
+      transform: scale(100);
+    }
+  }
+  @keyframes slide-left-right {
+    0% {
+      transform: scale(100);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 </style>

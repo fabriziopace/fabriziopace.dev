@@ -35,15 +35,19 @@
     <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
   -->
 
-  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" />
-  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" />
-
-  <!-- 
-    There's no leaner version for solid.min.css because it's already lean. 
-  -->
-  <link href="/fontawesome/css/solid.bareminimum.css" rel="stylesheet" />
-  <!-- <link href="/fontawesome/css/solid.css" rel="stylesheet" /> -->
-
-  
-  <link href="/fontawesome/css/regular.bareminimum.css" rel="stylesheet" />
+  <!-- load asynchronously, by applying the following pattern -->
+  <!-- link rel="preload" as="style" requests the stylesheet asynchronously -->
+  <!-- The onload attribute in the link allows the CSS to be processed when it finishes loading. -->
+  <!-- "nulling" the onload handler once it is used helps some browsers avoid re-calling the handler upon switching the rel attribute. -->
+  <!-- The reference to the stylesheet inside of a noscript element works as a fallback for browsers that don't execute JavaScript. -->
+  <link rel="preload" href="/fontawesome/css/fontawesome.bareminimum.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="/fontawesome/css/brands.bareminimum.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="/fontawesome/css/solid.bareminimum.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="/fontawesome/css/regular.bareminimum.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" />
+    <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" />
+    <link href="/fontawesome/css/solid.bareminimum.css" rel="stylesheet" />
+    <link href="/fontawesome/css/regular.bareminimum.css" rel="stylesheet" />
+  </noscript>
 </Fragment>
