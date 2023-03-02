@@ -2,32 +2,71 @@
 ---
 
 <footer class="text-sm leading-[1.75] mt-4">
-  <div>
-    This blog is built with 
+  <div class="sm:flex sm:items-center sm:justify-between">
     <a
-      class="unset gradient-link tracking-wider font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#f57111] to-[#f79605] hover:after:bg-gradient-to-r hover:after:from-[#f57111] hover:after:to-[#f79605]"
-      href={"https://github.com/flexdinesh/blogster"}
+      class="unset hover:text-text-link"
+      href="https://www.linkedin.com/in/fabrizio-pace/"
+      aria-label="Fabrizio on LindedIn"
       target="_blank"
     >
-      Blogster</a> and hosted in
+      <i
+        class="fa-brands fa-linkedin text-xl"
+        aria-hidden="true"
+        title="Fabrizio on LindedIn"></i>
+    </a>
     <a
-      class="unset gradient-link tracking-wider font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00abda] to-[#1476ff] hover:after:bg-gradient-to-r hover:after:from-[#00abda] hover:after:to-[#1476ff]"
-      href={"https://www.netlify.com"}
+      class="unset hover:text-text-link"
+      href="https://github.com/fabriziopace"
+      aria-label="Fabrizio on GitHub"
       target="_blank"
     >
-      Netlify</a>.
+      <i
+        class="fa-brands fa-github text-xl"
+        aria-hidden="true"
+        title="Fabrizio on GitHub"></i>
+    </a>
+    <a
+      class="unset hover:text-text-link"
+      href="https://community.neptune-software.com/users/fabriziopace"
+      aria-label="Fabrizio on Neptune Software Community"
+      target="_blank"
+    >
+      <i
+        class="fa-solid fa-neptune text-xl"
+        aria-hidden="true"
+        title="Fabrizio on Neptune Software Community"
+      >
+        <i
+          class="fa-regular fa-neptune-content size-neptune-icon-navbar"
+          aria-hidden="true"
+          title="Fabrizio on Neptune Software Community"></i></i
+      >
+    </a>
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+      >2023 - <a href="/">Fabrizio Pace</a>
+    </span>
+    <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+      <a
+        class="unset hover:text-text-link"
+        href="/"
+        aria-label="Privacy Policy"
+        target="_blank"
+      >
+          <span class="whitespace-nowrap">Privacy Policy</span>
+      </a>
+      <a
+        class="unset hover:text-text-link"
+        href="/"
+        aria-label="Privacy Policy"
+        target="_blank"
+      >
+          <span class="whitespace-nowrap">Cookie Policy</span>
+      </a>
+    </div>
   </div>
 </footer>
 
 <style>
-  footer {
-    grid-area: footer;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .gradient-link {
     position: relative;
     box-decoration-break: clone;
@@ -48,5 +87,14 @@
     transform: translateZ(0) scaleX(0);
     transform-origin: left center;
     transition: all 0.15s ease-in-out;
+  }
+
+  .size-neptune-icon-navbar {
+    font-size: 9px;
+    line-height: 1.75rem;
+    top: 0px;
+    right: 1px;
+    width: 8px;
+    height: 8px;
   }
 </style>

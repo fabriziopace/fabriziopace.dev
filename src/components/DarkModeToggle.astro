@@ -12,7 +12,7 @@
     data-headlessui-state=""
     ><span class="sr-only">Toggle dark mode</span><span
       id="mode-circle"
-      class="light inline-block h-4 w-4 rounded-full bg-gradient-to-tr invisible"
+      class="fa-solid fa-moon light inline-block h-4 w-4 rounded-full bg-gradient-to-tr invisible"
       ><span
         class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-white scale-[0]"
       ></span>
@@ -102,10 +102,16 @@
 <style>
   .light {
     transform: translateX(0.25rem);
-    background-color: white;
+    color: white;
   }
   .dark {
     transform: translateX(1.5rem);
-    background-color: rgb(38, 38, 38);
+    color: rgb(38, 38, 38);
+  }
+  .light:before {
+    content: "\f185";
+  }
+  .dark:before {
+    content: "\f186";
   }
 </style>
