@@ -18,7 +18,8 @@ Today I want to share with you how I was able to setup a new brand virtual devic
 - Windows 10/11
 
 ## Download the Android SDK
-- Download the Android command line tools in this page [Developer Android Studio](https://developer.android.com/studio) (**Download options** -> **Command line tools only**)
+- Download the Android command line tools in this page (**Download options** -> **Command line tools only**)
+{% ExternalUrl url="https://developer.android.com/studio" label="Developer Android Studio" /%}
 ![Install Android Studio](/images/install-android-emulator-without-android-studio/1.png)
 ![Command line tools only](/images/install-android-emulator-without-android-studio/2.png)
 - Create new folder, e.g. **C:\android-sdk**
@@ -30,7 +31,8 @@ Today I want to share with you how I was able to setup a new brand virtual devic
 ![tools folder](/images/install-android-emulator-without-android-studio/5.png)
 
 ## Install Java 8 JDK
-- Download and install the [Java 8 JDK](https://download.oracle.com/java/18/archive/jdk-18.0.2_windows-x64_bin.exe)
+- Download and install the 
+{% ExternalUrl url="https://download.oracle.com/java/18/archive/jdk-18.0.2_windows-x64_bin.exe" label="Java 8 JDK" /%}
 
 ## Download the Android platform
 - Open the **windows terminal** as admin and type
@@ -57,7 +59,8 @@ sdkmanager "platform-tools" "platforms;android-33"
 ```html
 avdmanager create avd --name android33 --package "system-images;android-33;google_apis;x86_64"
 ```
-- At this point if you receive errors you can try to enable the **Virtualization Technology** option in your BIOS (**SVM Mode** if you have **AMD** cpu) and install the [Intel HAXM](https://github.com/intel/haxm/releases/download/v7.7.1/haxm-windows_v7_7_1.zip)
+- At this point if you receive errors you can try to enable the **Virtualization Technology** option in your BIOS (**SVM Mode** if you have **AMD** cpu) and install the 
+{% ExternalUrl url="https://github.com/intel/haxm/releases/download/v7.7.1/haxm-windows_v7_7_1.zip" label="Intel HAXM" /%}
 - Will be asked if you want to create a custom hardware profile, just press enter
 
 ## Run the Android Emulator
@@ -69,7 +72,8 @@ cd C:\android-sdk\emulator
 ```html
 emulator –avd android33 -qemu -m 3000
 ```
-- At this point if you receive errors you should try to enable the **Virtualization Technology** option in your BIOS (**SVM Mode** if you have AMD cpu) and install the [Intel HAXM](https://github.com/intel/haxm/releases/download/v7.7.1/haxm-windows_v7_7_1.zip)
+- At this point if you receive errors you should try to enable the **Virtualization Technology** option in your BIOS (**SVM Mode** if you have AMD cpu) and install the 
+{% ExternalUrl url="https://github.com/intel/haxm/releases/download/v7.7.1/haxm-windows_v7_7_1.zip" label="Intel HAXM" /%}
 - The first startup will take some time, when done you should see this
 ![Android Emulator](/images/install-android-emulator-without-android-studio/6.png)
 
@@ -95,7 +99,7 @@ C:\Users\yourUser\android\avd\android33.avd
 (I suggest to change **hw.camera.back=virtualscene**, **hw.keyboard = yes** and **disk.dataPartition.size=1800M**)
 ![Edit emulator properties](/images/install-android-emulator-without-android-studio/10.png)
 - For install a new **APK** just drag and drop the file inside the emulator
-![Install APK inside the emulator](/images/install-android-emulator-without-android-studio/11.gif)
+{% ExternalUrl url="/images/install-android-emulator-without-android-studio/11.gif" label="Open GIF" /%}
 - You can debug your own Neptune application using the **chrome://inspect**
-![Debug Neptune App using Chrome inspector](/images/install-android-emulator-without-android-studio/12.gif)
+{% ExternalUrl url="/images/install-android-emulator-without-android-studio/12.gif" label="Open GIF" /%}
 Happy debugging!

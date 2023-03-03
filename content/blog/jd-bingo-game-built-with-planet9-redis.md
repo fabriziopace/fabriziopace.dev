@@ -67,7 +67,7 @@ When the game starts the host get new numbers. The first user to get all 15 numb
 
 ## Demo
 I created a GIF (it may require some time to load):
-![JD Bingo Demo](/images/jd-bingo-game-built-with-planet9-redis/7.gif)
+{% ExternalUrl url="/images/jd-bingo-game-built-with-planet9-redis/7.gif" label="View GIF" /%}
 
 ## What I learned
 Using Redis in P9 applications has a huge potential, I want to give a big thank you to the engineering team and everyone else involved in this release.

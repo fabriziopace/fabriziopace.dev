@@ -45,7 +45,7 @@ ping
 
 ## Install and start Redis server on other OS
 You can find the documentation in the official website:
-[Redis Installation](https://redis.io/docs/getting-started/installation)
+{% ExternalUrl url="https://redis.io/docs/getting-started/installation" label="Redis Installation" /%}
 
 ## Set the Redis URI inside Planet 9 settings
 - Open the **Planet 9 Cockpit** and go inside the **System Settings** > **Database**
@@ -85,15 +85,14 @@ if (data.text) {
 ## Test the application
 Open the app in two different windows and start typing inside the text area.
 Here a GIF:
-![Testing the application](/images/getting-started-with-redis-planet9/6.gif)
+{% ExternalUrl url="/images/getting-started-with-redis-planet9/6.gif" label="Open GIF" /%}
 
 ## Other links
 You can find more details here:
-[Event-Driven Architecture (EDA)](https://community.neptune-software.com/documentation/release-notes-p9/documentation/dxp-release-22-open-edition#event-driven-architecture-eda)
+{% ExternalUrl url="https://community.neptune-software.com/documentation/release-notes-p9/documentation/dxp-release-22-open-edition#event-driven-architecture-eda" label="Event-Driven Architecture (EDA)" /%}
 
 In January i created a simple game using this technology:
 [JD Bingo – Game built in 1 day with Planet 9 and Redis](/blog/jd-bingo-game-built-with-planet9-redis)
-
 
 Hope this basic example can help. 
 Happy coding!

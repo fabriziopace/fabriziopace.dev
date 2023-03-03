@@ -1,0 +1,10 @@
+---
+type Props = {
+  url: string;
+  label: string;
+};
+
+const { url, label } = Astro.props;
+---
+
+<a href={url} class="unset hover:text-text-link" target="_blank">{label}</a>

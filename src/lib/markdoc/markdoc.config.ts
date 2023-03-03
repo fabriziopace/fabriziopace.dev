@@ -76,6 +76,14 @@ export const config: Config = {
       },
       selfClosing: true,
     },
+    ExternalUrl: {
+      render: "ExternalUrl",
+      attributes: {
+        url: { type: String, required: true },
+        label: { type: String, required: true },
+      },
+      selfClosing: true,
+    },
     tweet: {
       render: "TweetEmbed",
       attributes: {
