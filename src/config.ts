@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = "Fabrizio Pace";
 export const SITE_DESCRIPTION =
-  "Welcome to my blog! I write about modern web development.";
+  "Hello, welcome to my blog! I write about Neptune Software and other technologies.";
 export const TWITTER_HANDLE = "";
 export const MY_NAME = "Fabrizio Pace";
 
