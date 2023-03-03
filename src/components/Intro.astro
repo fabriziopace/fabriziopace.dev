@@ -1,9 +1,10 @@
 ---
+import Socials from "./Socials.astro";
 ---
 
 <section class="mb-8">
   <div class="effect-slide" style="cursor:pointer">
-    <img src="/images/tokyotower.jpg" alt="Tokyo Tower" title="" />
+    <img src="/images/tokyotower.jpg" alt="Tokyo Tower" title="" width="750" height="200" />
   </div>
   <div class="mb-6">
     <h1
@@ -20,55 +21,20 @@
     >
       <div class="flex items-center">
         <img
-          class="w-10 h-10 rounded-full mr-4"
-          src="/images/profilepicture.png"
+          class="rounded-full mr-4"
+          src="/images/profilepicture.webp"
           alt="Avatar of Fabrizio Pace"
+          width="50"
+          height="50"
+          loading="lazy"
         />
         <div class="text-sm">
           <p class="leading-none font-bold">Fabrizio Pace</p>
           <p class="text-xs">Full Stack Developer</p>
         </div>
       </div>
-      <div class="whitespace-nowrap">
-        <a
-          class="unset ml-4 hover:text-text-link"
-          href="https://www.linkedin.com/in/fabrizio-pace/"
-          aria-label="Fabrizio on LinkedIn"
-          target="_blank"
-        >
-          <i
-            class="fa-brands fa-linkedin text-xl"
-            aria-hidden="true"
-            title="Fabrizio on LinkedIn"></i>
-        </a>
-        <a
-          class="unset ml-4 hover:text-text-link"
-          href="https://github.com/fabriziopace"
-          aria-label="Fabrizio on GitHub"
-          target="_blank"
-        >
-          <i
-            class="fa-brands fa-github text-xl"
-            aria-hidden="true"
-            title="Fabrizio on GitHub"></i>
-        </a>
-        <a
-          class="unset ml-4 hover:text-text-link"
-          href="https://community.neptune-software.com/users/fabriziopace"
-          aria-label="Fabrizio on Neptune Software Community"
-          target="_blank"
-        >
-          <i
-            class="fa-solid fa-neptune text-xl"
-            aria-hidden="true"
-            title="Fabrizio on Neptune Software Community"
-          >
-            <i
-              class="fa-regular fa-neptune-content"
-              aria-hidden="true"
-              title="Fabrizio on Neptune Software Community"></i></i
-          >
-        </a>
+      <div class="">
+        <Socials />
       </div>
     </div>
   </div>
