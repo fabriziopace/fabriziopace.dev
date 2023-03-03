@@ -88,7 +88,11 @@ C:\android-sdk\emulator\emulator.exe –avd android33 -qemu -m 3000
 ![Emulator shortcut pinned to taskbar](/images/install-android-emulator-without-android-studio/9.png)
 
 ## What’s next
-- Eventually you edit the Emulator proprieties by editing the **config** file in **C:\Users\yourUser\.android\avd\android33.avd** (I suggest to change **hw.camera.back=virtualscene**, **hw.keyboard = yes** and **disk.dataPartition.size=1800M**)
+- Eventually you edit the Emulator proprieties by editing the **config** file in 
+```html
+C:\Users\yourUser\android\avd\android33.avd
+```
+(I suggest to change **hw.camera.back=virtualscene**, **hw.keyboard = yes** and **disk.dataPartition.size=1800M**)
 ![Edit emulator properties](/images/install-android-emulator-without-android-studio/10.png)
 - For install a new **APK** just drag and drop the file inside the emulator
 ![Install APK inside the emulator](/images/install-android-emulator-without-android-studio/11.gif)
