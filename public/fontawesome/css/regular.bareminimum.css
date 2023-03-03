@@ -3,30 +3,35 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2022 Fonticons, Inc.
  */
-:root, :host {
+:root,
+:host {
   --fa-style-family-classic: 'Font Awesome 6 Free';
-  --fa-font-regular: normal 400 1em/1 'Font Awesome 6 Free'; }
+  --fa-font-regular: normal 400 1em/1 'Font Awesome 6 Free';
+}
 
 @font-face {
   font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype"); }
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype");
+}
 
 .far,
 .fa-regular {
-  font-weight: 400; }
-  
+  font-weight: 400;
+}
+
 .fa-neptune-content {
   position: absolute;
-  top: 5px;
-  right: 3px;
-  font-size: 7px;
+  top: 10px;
+  right: 1px;
+  font-size: 9px;
   height: 7px;
   width: 7px;
   color: rgb(var(--color-bg-body) / 1);
 }
+
 .fa-neptune-content:before {
   content: "\f111";
 }
