@@ -24,10 +24,8 @@
 
 .fa-neptune {
   position: relative;
-  font-size: 17px;
-  height: 17px;
-  width: 17px;
 }
+
 .fa-neptune:before {
   content: "\f111";
 }
