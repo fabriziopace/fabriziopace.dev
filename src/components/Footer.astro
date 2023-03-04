@@ -3,30 +3,12 @@ import Socials from "./Socials.astro";
 ---
 
 <footer class="text-sm leading-[1.75] mt-4">
-  <div class="sm:flex sm:items-center sm:justify-between py-4">
+  <div class="flex items-center  justify-between sm:flex sm:items-center sm:justify-between py-4">
     <span class="text-sm sm:text-center"
       >2023 - <a href="/" class="unset hover:text-text-link">Fabrizio Pace</a>
     </span>
-    <div>
+    <div class="whitespace-nowrap">
       <Socials />
-    </div>
-    <div class="flex space-x-6 sm:justify-center">
-      <a
-        class="unset hover:text-text-link"
-        href="/"
-        aria-label="Privacy Policy"
-        target="_blank"
-      >
-        <span class="whitespace-nowrap">Privacy Policy</span>
-      </a>
-      <a
-        class="unset hover:text-text-link"
-        href="/"
-        aria-label="Privacy Policy"
-        target="_blank"
-      >
-        <span class="whitespace-nowrap">Cookie Policy</span>
-      </a>
     </div>
   </div>
 </footer>
