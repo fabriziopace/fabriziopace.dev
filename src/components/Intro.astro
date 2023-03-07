@@ -3,8 +3,10 @@ import Socials from "./Socials.astro";
 ---
 
 <section class="mb-8">
-  <div class="effect-slide">
-    <img src="/images/tokyotower.jpg" alt="Tokyo Tower" title="" width="750" height="200" />
+  <div class="banner-intro">
+    <div class="effect-slide">
+      <img src="/images/tokyotower.jpg" alt="Tokyo Tower" title="" width="750" height="200" />
+    </div>
   </div>
   <div class="mb-6">
     <h1
@@ -65,6 +67,28 @@ import Socials from "./Socials.astro";
   </div>
 </section>
 
+<script>
+  const bannerEl = document.querySelector("div.banner-intro");
+  if (bannerEl) {
+    // instead hover change the color on click
+    bannerEl.addEventListener("click", () => {
+      const effectDiv = document.querySelector("div.effect-slide");
+      if (effectDiv) {
+        const classList = effectDiv.classList;
+        if (classList.contains("effect-slide-in")) {
+          // with colors
+          classList.add("effect-slide-out");
+          classList.remove("effect-slide-in");
+        } else {
+          // black and white
+          classList.add("effect-slide-in");
+          classList.remove("effect-slide-out");
+        }
+      }
+    });
+  }
+</script>
+
 <style>
   .effect-slide {
     position: relative;
@@ -86,10 +110,20 @@ import Socials from "./Socials.astro";
     transform: scale(1);
     transform-origin: right bottom;
     animation: slide-right-left 1s linear 1 forwards;
+    animation-delay: 2s;
   }
 
-  .effect-slide:hover::before {
+  /* .effect-slide:hover::before {
     animation: slide-left-right 1s linear 1 forwards;
+  } */
+
+  .effect-slide-in::before {
+    animation: slide-left-right 1s linear 1 forwards;
+    animation-delay: 0s;
+  }
+  .effect-slide-out::before {
+    animation: slide-right-left 1s linear 1 forwards;
+    animation-delay: 0s;
   }
 
   @keyframes slide-right-left {
