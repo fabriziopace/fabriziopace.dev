@@ -7,4 +7,6 @@ type Props = {
 const { url, label } = Astro.props;
 ---
 
-<a href={url} class="unset hover:text-text-link" target="_blank">{label}</a>
+<a href={url} class="unset hover:text-text-link" target="_blank">{label}<span>
+<i class="text-[12px] pb-2 fa-solid fa-up-right-from-square"></i>
+</span></a>
