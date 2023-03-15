@@ -1,0 +1,13 @@
+---
+import PageMeta from "../components/PageMeta.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import NotFound from "../components/NotFound.astro";
+import { SITE_TITLE } from "../config";
+---
+
+<PageLayout>
+  <PageMeta title={`${SITE_TITLE} - Full Stack Developer`} slot="meta" />
+  <Fragment slot="main">
+    <NotFound />
+  </Fragment>
+</PageLayout>

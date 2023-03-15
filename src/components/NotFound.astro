@@ -1,0 +1,58 @@
+---
+---
+
+<section class="mb-8">
+  <div class="banner-intro">
+    <div class="effect-slide">
+      <img
+        src="/images/tokyotower.jpg"
+        alt="Tokyo Tower"
+        title=""
+        width="750"
+        height="200"
+      />
+    </div>
+  </div>
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="mx-auto max-w-screen-sm text-center">
+      <h1
+        class="font-bold uppercase text-center text-4xl md:text-5xl xtracking-tighter py-6 overflow-hidden"
+      >
+        <span
+          class="bg-gradient-to-br from-[#334155] via-[#1e293b] to-[#0f172a] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent"
+        >
+          404
+        </span>
+      </h1>
+      <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
+        Whoops! That page doesn't exist.
+      </p>
+      <a href="/" aria-label="Homepage">Back to Homepage</a>
+    </div>
+  </div>
+
+  <style>
+    .effect-slide {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+    }
+
+    .effect-slide:before {
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      mix-blend-mode: hue;
+      background: linear-gradient(150deg, black 99%, transparent 1%);
+      transform: scale(1);
+      transform-origin: right bottom;
+      animation: slide-right-left 1s linear 1 forwards;
+      animation-delay: 0.5s;
+    }
+  </style>
+</section>
