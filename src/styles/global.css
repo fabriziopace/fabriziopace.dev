@@ -28,14 +28,14 @@
         /* black */
         --color-text-code: 0 0 0;
         /* black */
-        --color-text-selection: 0 0 0;
+        --color-text-selection: 255 255 255;
 
         /* white */
         --color-bg-body: 240 231 219;
         /* Tailwind amber-100 #fef3c7 */
         --color-bg-code: 254 243 199;
-        /* Tailwind primary-200 #e2e8f0 */
-        --color-bg-selection: 226 232 240;
+        /* Tailwind primary-200 #d1d1d1 */
+        --color-bg-selection: 15 23 41;
 
         /* primary-100 */
         --color-border-code: 244 244 245;
