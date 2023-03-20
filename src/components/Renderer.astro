@@ -8,6 +8,7 @@ import GitHubGistEmbed from "./GitHubGistEmbed.astro";
 import CodeBlock from "./CodeBlock.astro";
 import Heading from "./Heading.astro";
 import ExternalUrl from "./ExternalUrl.astro";
+import ImageCustom from "./ImageCustom.astro";
 
 type Props = {
   content: Content;
@@ -30,6 +31,10 @@ const components = {
   },
   ExternalUrl: {
     Component: ExternalUrl,
+    props: {},
+  },
+  ImageCustom: {
+    Component: ImageCustom,
     props: {},
   },
   TweetEmbed: {

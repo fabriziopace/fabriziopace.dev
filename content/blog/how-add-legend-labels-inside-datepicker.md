@@ -1,7 +1,7 @@
 ---
 external: false
 draft: false
-title: How to add legend labels inside the sap.m.DatePicker popup
+title: How to add legend labels inside the DatePicker popup
 description: With sap.m.DatePicker we can use the setLegend method with the sap.ui.unified.CalendarLegend element, but by default it will just add the legend colors without the labels. Today I want to share a little workaround to include also them in the same popup.
 date: 2023-03-09
 ---
@@ -10,17 +10,17 @@ date: 2023-03-09
 ## Overview
 With **sap.m.DatePicker** we can use the **setLegend** method with the **sap.ui.unified.CalendarLegend** element, but by default it will just add the legend colors without the labels.
 Today I want to share a little workaround to include also them in the same popup.
-![DatePicker with legends labels](/images/how-add-legend-labels-inside-datepicker/1.png)
+{% ImageCustom src="/images/how-add-legend-labels-inside-datepicker/1.png" alt="DatePicker with legends labels" width="300" height="400" /%}
 
 ## Steps
 - In the **App Designer** create a new **sap.m.DatePicker** inside a **Page**
 - In **Resources** create two new folders: **Javascript** and **Elements**
 - Inside the **Javascript** folder create two new script elements: **loadLegend** and **initialize**
-- Inside the **Elements** folder create a new **sap.ui.unified.CalendarLegend** with inside two **sap.ui.unified.CalendarLegendItem** elements
+- Inside the **Elements** folder create a new **sap.ui.unified.CalendarLegend** with inside two **CalendarLegendItem** elements
 - This should be the result:
-![App Designer structure](/images/how-add-legend-labels-inside-datepicker/2.png)
+{% ImageCustom src="/images/how-add-legend-labels-inside-datepicker/2.png" alt="App Designer structure" width="300" height="300" /%}
 - Select now the two **CalendarLegendItem** elements and set the **text** and **type** fields
-![CalendarLegendItem element properties](/images/how-add-legend-labels-inside-datepicker/3.png)
+{% ImageCustom src="/images/how-add-legend-labels-inside-datepicker/3.png" alt="CalendarLegendItem element properties" width="300" height="100" /%}
 - In the **loadLegend** script declare the following function
 ```javascript
 function loadLegend() {

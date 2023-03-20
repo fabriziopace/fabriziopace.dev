@@ -1,0 +1,14 @@
+---
+type Props = {
+  src: string;
+  width: string;
+  height: string;
+  alt: string;
+};
+
+const { src, width, height, alt } = Astro.props;
+---
+
+<center>
+  <img src={src} alt={alt} width={width} height={height} loading="lazy" />
+</center>

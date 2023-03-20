@@ -84,6 +84,16 @@ export const config: Config = {
       },
       selfClosing: true,
     },
+    ImageCustom: {
+      render: "ImageCustom",
+      attributes: {
+        src: { type: String, required: true },
+        width: { type: String, required: false },
+        height: { type: String, required: false },
+        alt: { type: String, required: false },
+      },
+      selfClosing: true,
+    },
     tweet: {
       render: "TweetEmbed",
       attributes: {
