@@ -53,22 +53,22 @@ You can find the documentation in the official website:
 ```html
 redis://127.0.0.1:6379
 ```
-![In-memory Database Planet9 Setting](/images/getting-started-with-redis-planet9/1.png)
+{% ImageCustom src="/images/getting-started-with-redis-planet9/1.png" alt="In-memory Database Planet9 Setting" width="200" height="130" /%}
 - Restart the Planet 9 instance
 
 ## Create a new event 
 - In the P9 Cockpit go to the **Events** and create a new one (**Event Action** needs to be **App**, as we will use it later in the APP Designer)
-![Event settings](/images/getting-started-with-redis-planet9/2.png)
+{% ImageCustom src="/images/getting-started-with-redis-planet9/2.png" alt="Event settings" width="700" height="200" /%}
 
 ## Create the App
 - Open the **App Designer** and create a new application
 - In HTML5 Document insert the following elements: **sap.m.Shell** > **sap.m.App** > **sap.m.Page** > **sap.m.TextArea**
 - In **Resources** create two folders **Redis**, **Javascript**
-![App Designer Structure](/images/getting-started-with-redis-planet9/3.png)
+{% ImageCustom src="/images/getting-started-with-redis-planet9/3.png" alt="App Designer Structure" width="200" height="220" /%}
 - Drag and drop a new **EventListener** and **EventTrigger** elements inside the Redis folder
-![Events Elements](/images/getting-started-with-redis-planet9/4.png)
+{% ImageCustom src="/images/getting-started-with-redis-planet9/4.png" alt="Events Elements" width="200" height="100" /%}
 - Select the **EventTrigger**, rename as **SendText** and under the property **event** select the one created before. This element will be used when the user will change the content of the text area, in order to send the new text via Redis to other users connected in the same app
-![Events Trigger Property](/images/getting-started-with-redis-planet9/5.png)
+{% ImageCustom src="/images/getting-started-with-redis-planet9/5.png" alt="Events Trigger Property" width="500" height="340" /%}
 - Select the **sap.m.TextArea**. go inside the **liveChange** event and use this code to call the **Event Trigger**
 ```javascript
 let newText = this.getValue();
