@@ -36,7 +36,6 @@ Then the user can enter the username and join.
 
 ## User interface
 The user interface is similar to the host one, in addition a random bingo ticket will be generated.
-![User Interface](/images/jd-bingo-game-built-with-planet9-redis/4.png)
 {% ImageCustom src="/images/jd-bingo-game-built-with-planet9-redis/4.png" alt="User Interface" width="700" height="500" /%}
 
 ## How Redis works with Planet 9
