@@ -12,7 +12,7 @@ The 2022 is over, was a big year for me including the amazing Hackathon and Impa
 
 ## The room creation
 When the user access the first time to the application can create a new room. In this process a structure containing the room data will be saved in cache (IndexedDB).
-![Create Room Dialog](/images/jd-bingo-game-built-with-planet9-redis/1.png)
+{% ImageCustom src="/images/jd-bingo-game-built-with-planet9-redis/1.png" alt="Create Room Dialog" width="360" height="350" /%}
 
 ## Room host interface
 In the header bar we have the room/user data and three buttons that enables you to: 
@@ -24,7 +24,7 @@ Below we have:
 - users online box;
 - new number box where the host has the button for get new ones;
 - bingo overview. 
-![Bingo Overview](/images/jd-bingo-game-built-with-planet9-redis/2.png)
+{% ImageCustom src="/images/jd-bingo-game-built-with-planet9-redis/2.png" alt="Bingo Overview" width="700" height="500" /%}
 
 ## Join in the room
 In order to join in the room the host will send the link got from the button on the header menu to the other users. Example:
@@ -32,18 +32,19 @@ In order to join in the room the host will send the link got from the button on 
 http://localhost:8080/app/jd_bingo?room=JDBINGO2023
 ```
 Then the user can enter the username and join.
-![Join in the Room Dialog](/images/jd-bingo-game-built-with-planet9-redis/3.png)
+{% ImageCustom src="/images/jd-bingo-game-built-with-planet9-redis/3.png" alt="Join in the Room Dialog" width="300" height="250" /%}
 
 ## User interface
 The user interface is similar to the host one, in addition a random bingo ticket will be generated.
 ![User Interface](/images/jd-bingo-game-built-with-planet9-redis/4.png)
+{% ImageCustom src="/images/jd-bingo-game-built-with-planet9-redis/4.png" alt="User Interface" width="700" height="500" /%}
 
 ## How Redis works with Planet 9
 First of all I installed a Redis server on a Linux machine, then used the corresponding URI under System Settings > Database (In-memory database).
 In the Events section of the cockpit I created the sendNewNumber event.
-![Redis Planet 9 Settings](/images/jd-bingo-game-built-with-planet9-redis/5.png)
+{% ImageCustom src="/images/jd-bingo-game-built-with-planet9-redis/5.png" alt="Redis Planet 9 Settings" width="340" height="280" /%}
 In the App Designer I created the **neptune.events.Trigger** and **neptune.events.Listener** elements, assigning the corresponding event in the attributes panel.
-![App Designer Events Elements](/images/jd-bingo-game-built-with-planet9-redis/6.png)
+{% ImageCustom src="/images/jd-bingo-game-built-with-planet9-redis/6.png" alt="App Designer Events Elements" width="200" height="50" /%}
 In the **press** event of the **"Get New Number"** button I generated a random number from 1 to 90 and then called the trigger function passing the new int as a parameter. In this way the host will send the new number to the other users connected.
 ```javascript
 let newNumber = getNewNumber();
