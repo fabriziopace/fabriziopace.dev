@@ -20,15 +20,15 @@ Today I want to share with you how I was able to setup a new brand virtual devic
 ## Download the Android SDK
 - Download the Android command line tools in this page (**Download options** -> **Command line tools only**)
 {% ExternalUrl url="https://developer.android.com/studio" label="Developer Android Studio" /%}
-![Install Android Studio](/images/install-android-emulator-without-android-studio/1.png)
-![Command line tools only](/images/install-android-emulator-without-android-studio/2.png)
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/1.png" alt="Install Android Studio" width="550" height="320" /%}
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/2.png" alt="Command line tools only" width="550" height="320" /%}
 - Create new folder, e.g. **C:\android-sdk**
 - Create new folders **cmdline-tools**, **platforms** and **platform-tools** inside **android-sdk**
 - Create new folder **tools** inside **cmdline-tools**
 - Open the zip downloaded and extract the folders **bin**, **lib** and the files **NOTICE**, **source.properties** inside **C:\android-sdk\cmdline-tools\tools**
-![android-sdk folder](/images/install-android-emulator-without-android-studio/3.png)
-![cmdline-tools folder](/images/install-android-emulator-without-android-studio/4.png)
-![tools folder](/images/install-android-emulator-without-android-studio/5.png)
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/3.png" alt="android-sdk folder" width="270" height="130" /%}
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/4.png" alt="cmdline-tools folder" width="400" height="100" /%}
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/5.png" alt="tools folder" width="400" height="100" /%}
 
 ## Install Java 8 JDK
 - Download and install the 
@@ -75,21 +75,21 @@ emulator –avd android33 -qemu -m 3000
 - At this point if you receive errors you should try to enable the **Virtualization Technology** option in your BIOS (**SVM Mode** if you have AMD cpu) and install the 
 {% ExternalUrl url="https://github.com/intel/haxm/releases/download/v7.7.1/haxm-windows_v7_7_1.zip" label="Intel HAXM" /%}
 - The first startup will take some time, when done you should see this
-![Android Emulator](/images/install-android-emulator-without-android-studio/6.png)
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/6.png" alt="Android Emulator" width="400" height="600" /%}
 
 ## Create a shortcut in order to pin the emulator to the taskbar
 - In the **File explorer** go inside **C:\android-sdk\emulator**
 - Right click on **emulator.exe** -> Create shortcut
-![Emulator shortcut creation](/images/install-android-emulator-without-android-studio/7.png)
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/7.png" alt="Emulator shortcut creation" width="380" height="130" /%}
 - Then right click on the shortcut created -> **Properties**
 - In the **target** type (in the -m parameter you can give a custom amount of RAM size)
 ```html
 C:\android-sdk\emulator\emulator.exe –avd android33 -qemu -m 3000
 ```
-![Emulator shortcut properties - custom ram size](/images/install-android-emulator-without-android-studio/8.png)
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/8.png" alt="Emulator shortcut properties - custom ram size" width="500" height="150" /%}
 - Save and right click again -> **Pin to taskbar**
 - At this point the emulator icon is ready to be opened in the Windows taskbar
-![Emulator shortcut pinned to taskbar](/images/install-android-emulator-without-android-studio/9.png)
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/9.png" alt="Emulator shortcut pinned to taskbar" width="100" height="50" /%}
 
 ## What’s next
 - Eventually you edit the Emulator proprieties by editing the **config** file in 
@@ -97,7 +97,7 @@ C:\android-sdk\emulator\emulator.exe –avd android33 -qemu -m 3000
 C:\Users\yourUser\android\avd\android33.avd
 ```
 (I suggest to change **hw.camera.back=virtualscene**, **hw.keyboard = yes** and **disk.dataPartition.size=1800M**)
-![Edit emulator properties](/images/install-android-emulator-without-android-studio/10.png)
+{% ImageCustom src="/images/install-android-emulator-without-android-studio/10.png" alt="Edit emulator properties" width="500" height="200" /%}
 - For install a new **APK** just drag and drop the file inside the emulator
 {% ExternalUrl url="/images/install-android-emulator-without-android-studio/11.gif" label="Open GIF" /%}
 - You can debug your own Neptune application using the **chrome://inspect**
