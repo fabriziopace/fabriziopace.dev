@@ -15,7 +15,7 @@ Working with the **sap.ui.table** element there could be the requirement to repl
 Today I want to share how I enabled the **Excel-like cells selection** without using external libraries.
 
 This solution will enable also the **arrow keys** navigation between cells.
-{% ImageCustom src="/images/how-empower-ui-table-excel-like/1.png" alt="Empower ui table with excel-like cells selection" width="550" height="230" /%}
+{% ImageCustom src="/images/how-empower-ui-table-excel-like/1.gif" alt="Empower ui table with excel-like cells selection" width="600" height="250" /%}
 
 ## Working in the App Designer
 
@@ -34,8 +34,9 @@ This solution will enable also the **arrow keys** navigation between cells.
 - This should be the result
   {% ImageCustom src="/images/how-empower-ui-table-excel-like/4.png" alt="App designer objects structure" width="320" height="360" /%}
 - Create a new **JavaScript** function with the following code
-  
+
   {% ExternalUrl url="https://github.com/fabriziopace/neptune-blog-empower-ui-table-excel-like/blob/main/enableExcelFnToUiTable.js" label="GitHub - enableExcelFnToUiTable.js" /%}
+
 - In the **initialize** Script call the new function created
 
 ```javascript
@@ -123,11 +124,13 @@ If we log the model data of the table we can see the fields updated correctly
 
 In **enableExcelFnToUiTable** Javascript function we first wait the rendering of the **sap.m.page** with the **addEventDelegate** method.
 
-Then to allow the drag cells selection we use the **onmousedown** / **onmouseup** events on the **table**.
+Then to allow the drag cells selection we use the **onmousedown** / **onmousemove** / **onmouseup** events on the **table**.
 
-In the **onmousedown** event we clear the old selections by removing the css class **customFocusExcelStyle**, then using the event parameter we check if the **current element** it's a **input** in order to store it into a variable (we will need it in the **onmouseup** event to understand which is the first cell where the drag started).
+In the **onmousedown** event we clear the old selections by removing the css class **customFocusExcelStyle**, then using the event parameter we check if the **current element** it's a **input** in order to store it into a variable (we will need it in the **onmousemove** event to understand which is the first cell where the drag started).
 
-In the **onmouseup** event we also check the **current element** (**last cell** where the mouse it's released). Then we calculate the various rows / cells indexes in order to select also the cells between. When the selection is done we open the popover.
+In the **onmousemove** event we also check the **current element**. Then we calculate the various rows / cells indexes in order to select also the cells between.
+
+In the **onmouseup** event we open the popover on the last cell selected.
 
 For the arrow keys navigation we use the **onkeydown** event where we do a similar logic based on the key pressed.
 
@@ -140,7 +143,6 @@ For the arrow keys navigation we use the **onkeydown** event where we do a simil
 - In OpenUI5 ondemand there is an example with a similar functionality (with a plugin?):
 
   {% ExternalUrl url="https://openui5.hana.ondemand.com/entity/sap.ui.table.Table/sample/sap.ui.table.sample.SelectCopyPaste" label="Openui5 Ondemand - Sample: Cell Selection, Copy & Paste" /%}
-
 
 Hope this helps
 
