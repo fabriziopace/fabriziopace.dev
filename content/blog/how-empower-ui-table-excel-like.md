@@ -1,7 +1,7 @@
 ---
 external: false
 draft: false
-title: How to empower sap.ui.table by adding Excel-like cells selection and arrow keys navigation without external libraries
+title: How to empower sap.ui.table by adding Excel-like cells selection and arrow keys navigation without external libraries (Part 1)
 description: Working with the sap.ui.Table element there could be the requirement to replicate some Excel functionalities. Today I want to share how I enabled the Excel-like cells selection without using external libraries.
 date: 2023-11-13
 ---
@@ -143,6 +143,7 @@ For the arrow keys navigation we use the **onkeydown** event where we do a simil
 - In OpenUI5 ondemand there is an example with a similar functionality (with a plugin?):
 
   {% ExternalUrl url="https://openui5.hana.ondemand.com/entity/sap.ui.table.Table/sample/sap.ui.table.sample.SelectCopyPaste" label="Openui5 Ondemand - Sample: Cell Selection, Copy & Paste" /%}
+- I created a [Part 2](/blog/how-to-enable-control-click-multi-cells-selection-on-ui-table) where the Control + Click multi-cells selection is enabled on the table
 
 Hope this helps
 
