@@ -10,7 +10,7 @@ date: 2024-05-14
 ## Overview
 I love playing card games, one of them is **{% ExternalUrl url="https://en.wikipedia.org/wiki/Uno_(card_game)" label="Uno!" /%}** and this month I tried to replicate it in **Neptune** just using **UI5 objects**, **JavaScript**, **Redis** and **CSS**.
 
-Today I want to share the project available for everyone on my personal **GitHub**! At the end of the blog you will find also a **full play demo**.
+Today I want to share the project available for everyone on my personal **GitHub**! At the end of the blog you will also find a **full play demo**.
 
 A big thank you to my wife that gave me the idea.
 {% ImageCustom src="/images/neptune-uno-card-game/1.gif" alt="Neptune Uno Card Game - Small GIF" width="700" height="500" /%}
@@ -58,21 +58,21 @@ In the **App Designer** I created **four sap.m.List** elements containing the **
 {% ImageCustom src="/images/neptune-uno-card-game/9.png" alt="App designer structure" width="280" height="290" /%}
 When the game starts all cards are built in the **startGame** function, where for each of them an **id** is generated (to move a specific card from a list to another when needed). 
 
-The deck is shuffled and each user get seven cards. 
+The deck is shuffled and each user gets seven cards. 
 
-On any **user action** like getting a new card or skipping the turn the **data** are sent using **Neptune Events** to the other user.
+On any **user action** like getting a new card or skipping the turn the **data** is sent using **Neptune Events** to the other user.
 {% ImageCustom src="/images/neptune-uno-card-game/10.png" alt="Game data sent via Neptune Events - Redis" width="700" height="390" /%}
 
 ## Rules
- The game tries to follow the **{% ExternalUrl url="https://en.wikipedia.org/wiki/Uno_(card_game)" label="official rules" /%}** and is composed by **108 cards** in total (excluding one **"Wild Shuffle Hands"** and three **"Wild Customizable"**).
+ The game tries to follow the **{% ExternalUrl url="https://en.wikipedia.org/wiki/Uno_(card_game)" label="official rules" /%}** and is composed of **108 cards** in total (excluding one **"Wild Shuffle Hands"** and three **"Wild Customizable"**).
 
-The first user to get rid of all personal hand cards win the game.
+The first user to get rid of all personal hand cards wins the game.
 {% ImageCustom src="/images/neptune-uno-card-game/11.png" alt="All game cards" width="700" height="306" /%}
 
 ## What's next
 - Allow to invite **more users** to play the game (currently maximum 2 per room)
 - The game interface can be improved with **smoother animations**
-- **JavaScript** code can be adapted for **futher logics** like having more **rounds** and **counting user points**
+- **JavaScript** code can be adapted for **further logics** like having more **rounds** and **counting user points**
 - **Cards** data can be moved to a **Planet 9 table**
 
 ## What I learned
@@ -169,7 +169,7 @@ I created a GIF (it may require some time to load):
 - {% ExternalUrl url="https://sass-lang.com/guide/" label="Sass Basics" /%}
 - {% ExternalUrl url="https://sass-lang.com/documentation/at-rules/control/for/" label="@for Sass Documentation" /%}
 
-My motto: always make sure to having fun to unlock your limits!
+My motto: always make sure to have fun to unlock your limits!
 
 Wish you all to reach and make your dreams real.
 
