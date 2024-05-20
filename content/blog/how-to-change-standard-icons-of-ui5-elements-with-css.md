@@ -4,6 +4,7 @@ draft: false
 title: How to change standard icons of UI5 elements with CSS
 description: Using UI5 elements like Input or ComboBox we could have the requirement to change the standard icon. Today I want to share how achieve it using CSS.
 date: 2024-01-12
+banner: /images/how-to-change-standard-icons-of-ui5-elements-with-css/banner.png
 ---
 
 ![Blog Banner](/images/how-to-change-standard-icons-of-ui5-elements-with-css/banner.png)

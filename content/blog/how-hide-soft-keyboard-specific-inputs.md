@@ -4,6 +4,7 @@ draft: false
 title: How to hide soft keyboard on specific inputs without plugins
 description: Working with applications that are used for example by scanguns we could have the requirement to hide the soft keyboard on specific inputs. Today I want to share a little workaround found in a Stackoverflow topic that I tried to adapt for Neptune.
 date: 2023-10-31
+banner: /images/how-hide-soft-keyboard-specific-inputs/banner.png
 ---
 ![Blog Banner](/images/how-hide-soft-keyboard-specific-inputs/banner.png)
 

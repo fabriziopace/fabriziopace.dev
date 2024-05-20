@@ -4,6 +4,7 @@ draft: false
 title: How to install Android emulator without Android Studio for test and debug Neptune Apps
 description: In the mobile development world can be useful have an Android emulator ready for test and debug your APKs, but not always we want to install Android Studio in order to achieve it. Let's see how to setup a new brand virtual device using the Android SDK.
 date: 2022-08-06
+banner: /images/install-android-emulator-without-android-studio/banner.png
 ---
 ![Blog Banner](/images/install-android-emulator-without-android-studio/banner.png)
 

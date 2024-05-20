@@ -4,6 +4,7 @@ draft: false
 title: How to empower sap.ui.table by adding Excel-like cells selection and arrow keys navigation without external libraries (Part 1)
 description: Working with the sap.ui.Table element there could be the requirement to replicate some Excel functionalities. Today I want to share how I enabled the Excel-like cells selection without using external libraries.
 date: 2023-11-13
+banner: /images/how-empower-ui-table-excel-like/banner.png
 ---
 
 ![Blog Banner](/images/how-empower-ui-table-excel-like/banner.png)

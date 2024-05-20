@@ -4,6 +4,7 @@ draft: false
 title: How to add custom texts in Calendar special dates with CSS
 description: In UI5 there are nice components like the Planning Calendar that allow us to display multiple rows with appointments, but we could have the requirement to use the sap.ui.unified.Calendar element. Today I want to share how add custom texts inside specific days using the specialDates aggregation, tooltip and CSS.
 date: 2024-02-02
+banner: /images/how-to-add-custom-texts-in-calendar-special-dates-with-css/banner.png
 ---
 
 ![Blog Banner](/images/how-to-add-custom-texts-in-calendar-special-dates-with-css/banner.png)

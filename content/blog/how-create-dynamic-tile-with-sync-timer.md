@@ -4,6 +4,7 @@ draft: false
 title: How to create a Dynamic Numeric Tile with a sync countdown timer
 description: In the Neptune DXP platform it’s possible to give dynamic information to the user by creating for example a NumericContent tile. We are also able to run a custom application in card with the Live application type. Today I want to share how I created a custom tile showing the actual number of Purchase Orders, the time remaining for the next sync with the relative progress bar.
 date: 2023-04-06
+banner: /images/how-create-dynamic-tile-with-sync-timer/banner.png
 ---
 ![Blog Banner](/images/how-create-dynamic-tile-with-sync-timer/banner.png)
 

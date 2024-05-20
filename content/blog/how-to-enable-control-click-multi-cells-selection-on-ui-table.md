@@ -4,6 +4,7 @@ draft: false
 title: How to enable Control + Click multi-cells selection on sap.ui.table - Empower sap.ui.table with Excel-like functionalities (Part 2)
 description: This blog wants to follow the Part 1, where a sap.ui.table can be enhanced with some Excel-like functionalities. Today I want to share how I enabled the Control + Click multi-cells selection on a grid table without using external libraries.
 date: 2023-12-21
+banner: /images/how-to-enable-control-click-multi-cells-selection-on-ui-table/banner.png
 ---
 
 ![Blog Banner](/images/how-to-enable-control-click-multi-cells-selection-on-ui-table/banner.png)

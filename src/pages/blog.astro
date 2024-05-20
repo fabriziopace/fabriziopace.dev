@@ -22,7 +22,7 @@ const sortedPosts = posts
 <PageLayout>
   <PageMeta title={`Blog | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
-    <ul>
+    <ul class="blogList items-start">
       {
         sortedPosts.map((post) => {
           const formattedDate = new Date(
@@ -33,7 +33,7 @@ const sortedPosts = posts
             day: "numeric",
           });
           return (
-            <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
+            <li class="">
               <div class="title">
                 {post.frontmatter.external ? (
                   <a
@@ -49,8 +49,13 @@ const sortedPosts = posts
                 ) : (
                   <a
                     href={`/blog/${post.slug}`}
-                    class="unset hover:text-text-link"
+                    class="unset hover:text-text-link blogTitle"
                   >
+                    <img
+                      src={post.frontmatter.banner}
+                      alt={post.frontmatter.title}
+                      class="blogBanner"
+                    />
                     {post.frontmatter.title}
                   </a>
                 )}
@@ -67,3 +72,34 @@ const sortedPosts = posts
     </ul>
   </section>
 </PageLayout>
+
+<style>
+  .blogList {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    display: grid;
+  }
+  .blogList li {
+    padding-left: 0;
+  }
+  .blogList li:before {
+    display: none;
+  }
+  .blogBanner {
+    width: 100%;
+  }
+  .blogTitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--color-text-link));
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+  }
+  .blogTitle:hover {
+    color: inherit;
+  }
+</style>

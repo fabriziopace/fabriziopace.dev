@@ -4,4 +4,5 @@ description: Built with Neptune (Open Edition), OpenUI5 / JavaScript, Redis and 
 date: 2024-05-14
 url: https://github.com/fabriziopace/neptune-uno-card-game
 external: true
+banner: temp
 ---

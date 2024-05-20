@@ -4,6 +4,7 @@ draft: false
 title: How to add legend labels inside the DatePicker popup
 description: With sap.m.DatePicker we can use the setLegend method with the sap.ui.unified.CalendarLegend element, but by default it will just add the legend colors without the labels. Today I want to share a little workaround to include also them in the same popup.
 date: 2023-03-09
+banner: /images/how-add-legend-labels-inside-datepicker/banner.png
 ---
 ![Blog Banner](/images/how-add-legend-labels-inside-datepicker/banner.png)
 

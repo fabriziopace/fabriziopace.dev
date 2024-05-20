@@ -4,6 +4,7 @@ draft: false
 title: Play UNO! Card Game in Neptune with Redis - GitHub Project Available
 description: I love playing card games, one of them is Uno! and this month I tried to replicate it in Neptune just using UI5 objects, JavaScript, Redis and CSS. Today I want to share the project available for everyone on my personal GitHub!
 date: 2024-05-14
+banner: /images/neptune-uno-card-game/banner.png
 ---
 ![Blog Banner](/images/neptune-uno-card-game/banner.png)
 

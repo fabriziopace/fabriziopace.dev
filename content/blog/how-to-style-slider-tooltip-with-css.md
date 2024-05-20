@@ -4,6 +4,7 @@ draft: false
 title: How to Style the sap.m.Slider tooltip element with CSS
 description: In the Slider component we can enable the advanced tooltip using the showAdvancedTooltip property. Today I want to share how to customize a specific sap.m.Slider tooltip element using custom CSS classes.
 date: 2024-04-08
+banner: /images/how-to-style-slider-tooltip-with-css/banner.png
 ---
 ![Blog Banner](/images/how-to-style-slider-tooltip-with-css/banner.png)
 

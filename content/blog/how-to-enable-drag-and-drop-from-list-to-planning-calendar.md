@@ -4,6 +4,7 @@ draft: false
 title: How to enable Drag and Drop from List to Planning Calendar
 description: In the Planning Calendar element we can enable the Drag and Drop functionality to move appointments between rows and columns. Today I want to share instead how to enable the Drag and Drop from List to Planning Calendar in order to create new appointments.
 date: 2024-03-03
+banner: /images/how-to-enable-drag-and-drop-from-list-to-planning-calendar/banner.png
 ---
 ![Blog Banner](/images/how-to-enable-drag-and-drop-from-list-to-planning-calendar/banner.png)
 
