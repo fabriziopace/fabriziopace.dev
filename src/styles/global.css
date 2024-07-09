@@ -92,6 +92,10 @@
     h6 {
         font-family: theme('fontFamily.heading');
     }
+
+    img {
+        border: 2px dashed;
+    }
 }
 
 @layer components {
