@@ -95,5 +95,6 @@ You can find more details here:
 In January i created a simple game using this technology:
 [JD Bingo – Game built in 1 day with Planet 9 and Redis](/blog/jd-bingo-game-built-with-planet9-redis)
 
-Hope this basic example can help. 
+Hope this basic example can help.
+
 Happy coding!
